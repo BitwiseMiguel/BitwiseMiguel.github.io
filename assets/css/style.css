@@ -1,0 +1,385 @@
+/* =========================================================
+   1. BASE GLOBAL
+   ========================================================= */
+
+/* Estilo geral do site */
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  background: #ffffff;
+  background-color: #e9e9e9;
+  color: rgb(60, 60, 60);
+  margin: 0;
+}
+
+/* Links globais */
+a {
+  color: #0058cc;
+}
+
+
+/* =========================================================
+   2. TIPOGRAFIA
+   ========================================================= */
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+  margin: 10px 0;
+  font-weight: bold;
+  min-height: 34px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: bold;
+  min-height: 34px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+
+/* =========================================================
+   3. UTILITÁRIOS DE TEXTO
+   ========================================================= */
+
+.center {
+  text-align: center;
+}
+
+.justificado {
+  text-align: justify;
+}
+
+.centro-bold {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bold {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.destaque {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.destaque-center {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* =========================================================
+   4. LAYOUT GERAL
+   ========================================================= */
+
+.container {
+  margin: 20px auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+
+/* =========================================================
+   5. HEADER
+   ========================================================= */
+
+.header {
+  position: relative;
+  max-width: 700px;
+  margin: 45px auto 0;
+  text-align: center;
+}
+
+.logo {
+  height: 80px;
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* =========================================================
+   6. NAVEGAÇÃO (MENU)
+   ========================================================= */
+
+nav {
+  background: #f2f2f2;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+nav a {
+  margin: 0 8px;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Menu horizontal (caso uses flex no futuro) */
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.menu a,
+.dropbtn {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   7. DROPDOWN MENU
+   ========================================================= */
+
+.dropdown {
+  margin: 0 8px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 5px;
+  opacity: 0.9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  background-color: white;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* =========================================================
+   8. SECÇÕES ESPECIAIS
+   ========================================================= */
+
+.faixa-azul {
+  background: #0a5aa0;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+}
+
+
+/* =========================================================
+   9. BOTÕES
+   ========================================================= */
+
+.big-button {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #4a90e2, #0077ff);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+}
+
+.big-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.big-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   10. SECÇÃO DE NOTÍCIAS
+   ========================================================= */
+
+.news {
+  margin-top: 10px;
+}
+
+.news b {
+  font-size: 14px;
+}
+
+.news small {
+  display: block;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   11. FOOTER
+   ========================================================= */
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   12. COMPONENTES (BOXES / ICONS)
+   ========================================================= */
+
+.image {
+  width: 50px;
+  height: auto;
+  filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(190deg);
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+.descricao {
+  font-size: 14px;
+}
+
+sup {
+  font-size: 10px;
+  vertical-align: super;
+}
+
+
+/* =========================================================
+   13. GRID DE BLOCOS
+   ========================================================= */
+
+.blocos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  width: 320px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+}
+
+.container-wide {
+  max-width: 1200px;   /* maior que o container normal */
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 40px;     /* mais respiro lateral */
+}
+
+.contacto-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 40px !important;
+  align-items: start !important;
+}
+
+/* inputs */
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.contacto-form textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+/* coluna info */
+.contacto-info p {
+  margin: 10px 0;
+}
+
+/* responsivo */
+@media (max-width: 800px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.toast {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0a5aa0;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #007BFF;
+  color: white;
+}
