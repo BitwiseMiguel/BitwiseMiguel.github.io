@@ -383,3 +383,24 @@ sup {
   background: #007BFF;
   color: white;
 }
+
+#related-posts {
+  margin: 15px 0;
+  padding-left: 18px; /* controla o recuo */
+  text-align: left;
+}
+
+#related-posts li {
+  margin-bottom: 0px; /* menos espaço entre itens */
+  line-height: 1.4;   /* reduz altura da linha */
+}
+
+#related-posts a {
+  font-size: 14px; /* opcional: ligeiramente menor */
+  text-decoration: none;
+  color: #007BFF;
+}
+
+#related-posts a:hover {
+  text-decoration: underline;
+}
