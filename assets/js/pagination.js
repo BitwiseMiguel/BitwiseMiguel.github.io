@@ -17,7 +17,7 @@ function mostrarArtigos() {
 
   artigosPagina.forEach(artigo => {
     container.innerHTML += `
-      <div class="box">
+      <div class="box" style="background-color: #d6d6d6;">
         <div class="topo">
           <span class="titulo">${artigo.titulo}</span>
         </div>
