@@ -1,52 +1,84 @@
-const artigosPorPagina = 6;
 
-function getPaginaAtual() {
+const postsPerPage = 6;
+
+function getCurrentPage() {
   const params = new URLSearchParams(window.location.search);
   return parseInt(params.get("page")) || 1;
 }
 
-let paginaAtual = getPaginaAtual();
 
-function mostrarArtigos() {
-  const inicio = (paginaAtual - 1) * artigosPorPagina;
-  const fim = inicio + artigosPorPagina;
-  const artigosPagina = artigos.slice(inicio, fim);
+let currentPage = getCurrentPage();
 
+function renderPosts() {
   const container = document.getElementById("blog-list");
   container.innerHTML = "";
 
-  artigosPagina.forEach(artigo => {
+  const start = (currentPage - 1) * postsPerPage;
+  const end = start + postsPerPage;
+
+  const posts = artigos.slice(start, end);
+
+  posts.forEach(post => {
     container.innerHTML += `
       <div class="box" style="background-color: #d6d6d6;">
         <div class="topo">
-          <span class="titulo">${artigo.titulo}</span>
+          <span class="titulo">${post.titulo}</span>
         </div>
-        <div class="descricao">${artigo.descricao}</div>
-        <a href="${artigo.link}">Ler artigo</a>
+        <div class="descricao">${post.descricao}</div>
+        <a href="${post.link}">Ler artigo</a>
       </div>
     `;
   });
-
-  criarPaginacao();
 }
 
-function criarPaginacao() {
-  const totalPaginas = Math.ceil(artigos.length / artigosPorPagina);
-  const paginacao = document.getElementById("pagination");
+function renderPagination(currentPage, totalPages) {
+  const container = document.getElementById("pagination");
+  container.innerHTML = "";
 
-  paginacao.innerHTML = "";
+  function addButton(page, text = page) {
+    const btn = document.createElement("button");
+    btn.textContent = text;
+    if (page === currentPage) btn.classList.add("active");
+    btn.onclick = () => goToPage(page);
+    container.appendChild(btn);
+  }
 
-  for (let i = 1; i <= totalPaginas; i++) {
-    paginacao.innerHTML += `
-      <button onclick="irParaPagina(${i})" class="${i === paginaAtual ? 'active' : ''}">
-        ${i}
-      </button>
-    `;
+  if (currentPage > 3) {
+    addButton(1);
+    if (currentPage > 4) {
+      const span = document.createElement("span");
+      span.textContent = "...";
+      container.appendChild(span);
+    }
+  }
+
+  for (let i = currentPage - 2; i <= currentPage + 2; i++) {
+    if (i > 0 && i <= totalPages) {
+      addButton(i);
+    }
+  }
+
+  if (currentPage < totalPages - 2) {
+    if (currentPage < totalPages - 3) {
+      const span = document.createElement("span");
+      span.textContent = "...";
+      container.appendChild(span);
+    }
+    addButton(totalPages);
   }
 }
 
-function irParaPagina(pagina) {
-  window.location.search = "?page=" + pagina;
+function goToPage(page) {
+  currentPage = page;
+  window.location.search = "?page=" + page;
+  renderAll();
 }
 
-mostrarArtigos();
+function renderAll() {
+  renderPosts();
+
+  const totalPages = Math.ceil(artigos.length / postsPerPage);
+  renderPagination(currentPage, totalPages);
+}
+
+document.addEventListener("DOMContentLoaded", renderAll);
