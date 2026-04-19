@@ -13,6 +13,18 @@
 
   <base href="/">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/banners.css">
+
+  <script>
+    window.PAGE_ADS = {
+      right: [
+        { href: "/especial", img: "/assets/img/Logo.png", alt: "layout", desc: "ads description" }
+      ]
+    };
+  </script>
+
+  <script src="/assets/js/banners.js"></script>
+  <script src="/assets/data/ads-default.js"></script>
 
   <script defer src="/assets/js/layout.js"></script>
 
@@ -42,131 +54,160 @@
   <div id="header"></div>
   <div id="nav"></div>
 
-  <div class="container">
+  <div class="page-layout">
 
-    <h1>Porque é que os alunos têm dificuldades a Matemática?</h1>
+    <!-- Uncomment to active banners
+    <header class="top">
+      <div class="carousel">
+        
+        <div class="track"></div>
 
-    <p>
-      A Matemática é uma das disciplinas onde mais alunos apresentam dificuldades ao longo do ensino básico e secundário.
-      No entanto, estas dificuldades raramente estão relacionadas com “falta de capacidade”.
-    </p>
+        <div class="controls">
+          <button id="prev">❮</button>
+          <button id="next">❯</button>
+        </div>
+  
+      </div>
+    </header>
 
-    <p>
-      Na maioria dos casos, o problema está na forma como a disciplina é ensinada, estudada ou compreendida.
-    </p>
+    <aside class="sidebar left">
+      <div class="ad-slot" id="ad-left"></div>
+    </aside>
 
-    <h2>1. Falta de bases sólidas</h2>
+    <aside class="sidebar right">
+      <div class="ad-slot" id="ad-right"></div>
+    </aside>
+    -->
 
-    <p>
-      A Matemática é cumulativa. Isto significa que cada novo tema depende de conhecimentos anteriores.
-    </p>
+    <main class="content">
 
-    <p>
-      Quando existem lacunas em conteúdos básicos (como frações, equações ou álgebra), os temas mais avançados tornam-se muito mais difíceis.
-    </p>
+      <h1>Porque é que os alunos têm dificuldades a Matemática?</h1>
 
-    <h2>2. Estudo pouco consistente</h2>
+      <p>
+        A Matemática é uma das disciplinas onde mais alunos apresentam dificuldades ao longo do ensino básico e secundário.
+        No entanto, estas dificuldades raramente estão relacionadas com “falta de capacidade”.
+      </p>
 
-    <p>
-      Muitos alunos estudam Matemática apenas antes dos testes.
-      Este tipo de estudo “de última hora” não é suficiente para consolidar conceitos.
-    </p>
+      <p>
+        Na maioria dos casos, o problema está na forma como a disciplina é ensinada, estudada ou compreendida.
+      </p>
 
-    <p>
-      A prática regular é essencial para desenvolver raciocínio e fluência na resolução de exercícios.
-    </p>
+      <h3>1. Falta de bases sólidas</h3>
 
-    <h2>3. Dificuldade em aplicar a teoria</h2>
+      <p>
+        A Matemática é cumulativa. Isto significa que cada novo tema depende de conhecimentos anteriores.
+      </p>
 
-    <p>
-      Saber a fórmula não é o mesmo que saber quando e como a usar.
-    </p>
+      <p>
+        Quando existem lacunas em conteúdos básicos (como frações, equações ou álgebra), os temas mais avançados tornam-se muito mais difíceis.
+      </p>
 
-    <p>
-      Muitos alunos conseguem memorizar conteúdos, mas têm dificuldade em aplicá-los em exercícios diferentes dos exemplos dados na aula.
-    </p>
+      <h3>2. Estudo pouco consistente</h3>
 
-    <h2>4. Falta de método de estudo</h2>
+      <p>
+        Muitos alunos estudam Matemática apenas antes dos testes.
+        Este tipo de estudo “de última hora” não é suficiente para consolidar conceitos.
+      </p>
 
-    <p>
-      Estudar Matemática não é apenas “fazer exercícios aleatórios”.
-    </p>
+      <p>
+        A prática regular é essencial para desenvolver raciocínio e fluência na resolução de exercícios.
+      </p>
 
-    <p>
-      É necessário um método estruturado: começar por exercícios simples, evoluir gradualmente e rever erros com atenção.
-    </p>
+      <h3>3. Dificuldade em aplicar a teoria</h3>
 
-    <h2>5. Ansiedade e bloqueio mental</h2>
+      <p>
+        Saber a fórmula não é o mesmo que saber quando e como a usar.
+      </p>
 
-    <p>
-      A Matemática gera frequentemente ansiedade nos alunos, o que pode bloquear o raciocínio.
-    </p>
+      <p>
+        Muitos alunos conseguem memorizar conteúdos, mas têm dificuldade em aplicá-los em exercícios diferentes dos exemplos dados na aula.
+      </p>
 
-    <p>
-      Este bloqueio faz com que erros simples aconteçam mesmo quando o aluno sabe o conteúdo.
-    </p>
+      <h3>4. Falta de método de estudo</h3>
 
-    <h2>6. Ritmo da sala de aula</h2>
+      <p>
+        Estudar Matemática não é apenas “fazer exercícios aleatórios”.
+      </p>
 
-    <p>
-      Em turmas grandes, o professor não consegue adaptar o ritmo a todos os alunos.
-    </p>
+      <p>
+        É necessário um método estruturado: começar por exercícios simples, evoluir gradualmente e rever erros com atenção.
+      </p>
 
-    <p>
-      Alguns alunos precisam de mais tempo para consolidar conceitos, o que nem sempre é possível em contexto de aula.
-    </p>
+      <h3>5. Ansiedade e bloqueio mental</h3>
 
-    <h2>Como ultrapassar estas dificuldades?</h2>
+      <p>
+        A Matemática gera frequentemente ansiedade nos alunos, o que pode bloquear o raciocínio.
+      </p>
 
-    <p>
-      A boa notícia é que estas dificuldades podem ser ultrapassadas com as estratégias certas.
-    </p>
+      <p>
+        Este bloqueio faz com que erros simples aconteçam mesmo quando o aluno sabe o conteúdo.
+      </p>
 
-    <ul>
-      <li>Reforçar bases matemáticas essenciais</li>
-      <li>Estudar de forma regular e estruturada</li>
-      <li>Praticar exercícios de forma progressiva</li>
-      <li>Corrigir erros e perceber onde falhou</li>
-      <li>Procurar apoio quando necessário</li>
-    </ul>
+      <h3>6. Ritmo da sala de aula</h3>
 
-    <h2>Quando procurar ajuda?</h2>
+      <p>
+        Em turmas grandes, o professor não consegue adaptar o ritmo a todos os alunos.
+      </p>
 
-    <p>
-      Se as dificuldades persistirem apesar do estudo, pode ser útil recorrer a explicações.
-    </p>
+      <p>
+        Alguns alunos precisam de mais tempo para consolidar conceitos, o que nem sempre é possível em contexto de aula.
+      </p>
 
-    <p>
-      Um acompanhamento personalizado ajuda a identificar lacunas e a acelerar o progresso.
-    </p>
+      <h2>Como ultrapassar estas dificuldades?</h2>
 
-    <div class="center">
-      <br>
-      <a href="/contacto" class="big-button">
-        Pedir apoio em Matemática
-      </a>
-      <br>
-      <br>
-    </div>
+      <p>
+        A boa notícia é que estas dificuldades podem ser ultrapassadas com as estratégias certas.
+      </p>
 
-    <h2>Conclusão</h2>
+      <ul>
+        <li>Reforçar bases matemáticas essenciais</li>
+        <li>Estudar de forma regular e estruturada</li>
+        <li>Praticar exercícios de forma progressiva</li>
+        <li>Corrigir erros e perceber onde falhou</li>
+        <li>Procurar apoio quando necessário</li>
+      </ul>
 
-    <p>
-      As dificuldades a Matemática não são inevitáveis nem permanentes.
-      Com método, prática e apoio adequado, qualquer aluno pode melhorar significativamente o seu desempenho.
-    </p>
+      <h2>Quando procurar ajuda?</h2>
 
-    <p>
-      O mais importante é agir cedo, antes que as dificuldades se acumulem.
-    </p>
+      <p>
+        Se as dificuldades persistirem apesar do estudo, pode ser útil recorrer a explicações.
+      </p>
 
-    <h2>Artigos relacionados</h2>
+      <p>
+        Um acompanhamento personalizado ajuda a identificar lacunas e a acelerar o progresso.
+      </p>
 
-    <div id="related-posts"></div>
+      <div class="center">
+        <br>
+        <a href="/contacto.html">
+          <button class="big-button">
+            Pedir apoio em Matemática
+          </button>
+        </a>
+        <br>
+        <br>
+      </div>
 
-    <div id="footer"></div>
+      <h2>Conclusão</h2>
+
+      <p>
+        As dificuldades a Matemática não são inevitáveis nem permanentes.
+        Com método, prática e apoio adequado, qualquer aluno pode melhorar significativamente o seu desempenho.
+      </p>
+
+      <p>
+        O mais importante é agir cedo, antes que as dificuldades se acumulem.
+      </p>
+
+      <h2>Artigos relacionados</h2>
+
+      <div id="related-posts"></div>
+
+      <div id="footer"></div>
+
+    </main>
+
   </div>
-
 
 </body>
 </html>

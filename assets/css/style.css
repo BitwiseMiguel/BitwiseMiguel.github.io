@@ -1,3 +1,24 @@
+
+/* =========================================================
+   1. VARIÁVEIS
+   ========================================================= */
+
+:root {
+  --primary: #2563eb;
+  --secondary: #64748b;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+
+  --bg: #ffffff;
+  --text: #3c3c3c;
+  --url: #0058cc;
+
+  --radius: 8px;
+  --spacing: 1rem;
+}
+
+
 /* =========================================================
    1. BASE GLOBAL
    ========================================================= */
@@ -5,15 +26,14 @@
 /* Estilo geral do site */
 html, body {
   font-family: 'Montserrat', sans-serif;
-  background: #ffffff;
-  background-color: #e9e9e9;
-  color: rgb(60, 60, 60);
+  background-color: var(--bg);
+  color: var(--text);
   margin: 0;
 }
 
 /* Links globais */
 a {
-  color: #0058cc;
+  color: var(--url);
 }
 
 
@@ -24,17 +44,25 @@ a {
 h1 {
   text-align: center;
   font-size: 34px;
-  margin: 10px 0;
+  margin: 10px;
   font-weight: bold;
   min-height: 34px;
+  line-height: 1.2;
 }
 
 h2 {
   text-align: center;
-  font-size: 22px;
-  margin: 10px 0;
+  font-size: 26px;
+  margin: 10px 0px;
   font-weight: bold;
-  min-height: 34px;
+  min-height: 26px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: bold;
+  min-height: 20px;
 }
 
 p {
@@ -52,21 +80,8 @@ p {
   text-align: center;
 }
 
-.justificado {
+.justify {
   text-align: justify;
-}
-
-.centro-bold {
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-  font-weight: bold;
-}
-
-.bold {
-  font-size: 14px;
-  line-height: 1.4;
-  font-weight: bold;
 }
 
 .destaque {
@@ -89,6 +104,56 @@ p {
   margin: 20px auto;
   max-width: 700px;
   width: 100%;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr) 200px;
+  grid-template-rows: auto 1fr;
+
+  grid-template-areas:
+    "top top top"
+    "left center right";
+
+  gap: 20px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* topo */
+.top {
+  grid-area: top;
+}
+
+/* sidebars */
+.sidebar {
+  padding: 15px;
+  border-radius: 8px;
+  position: sticky;
+  top: 20px;
+}
+
+/* centro */
+.content {
+  grid-area: center;
+  min-width: 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top"
+      "center";
+  }
+
+  .sidebar {
+    display: none;
+  }
 }
 
 
