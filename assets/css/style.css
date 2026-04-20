@@ -176,6 +176,12 @@ p {
   transform: translateY(-50%);
 }
 
+@media (max-width: 900px) {
+  .logo {
+    left: 20px;
+  }
+}
+
 
 /* =========================================================
    6. NAVEGAÇÃO (MENU)
