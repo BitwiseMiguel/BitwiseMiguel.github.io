@@ -1,4 +1,26 @@
+/*
+  "/artigos/como-acompanhar-a-materia-quando-ja-estas-atrasado.html",
+  "/artigos/como-subir-de-10-para-15-valores-a-matematica.html",
+  "/artigos/porque-e-que-os-alunos-tem-dificuldades-a-matematica.html",
+  "/artigos/porque-e-que-estudar-muito-nao-chega-em-matematica.html",
+  
+  "/artigos/como-passar-no-exame-nacional-de-matematica-a.html",
+  
+  "/artigos/vale-a-pena-ter-explicacoes-no-secundario.html",
+  "/artigos/explicacoes-de-matematica-online-vs-presenciais.html",
+*/
+
 const artigos = [
+  {
+    titulo: "Como acompanhar a matéria quando já estás atrasado?",
+    descricao: "Guia prático para recuperar matéria em atraso com método eficiente, evitar erros comuns e voltar ao ritmo de estudo rapidamente.",
+    link: "/artigos/como-acompanhar-a-materia-quando-ja-estas-atrasado.html",
+    relacionados: [
+      "/artigos/porque-e-que-os-alunos-tem-dificuldades-a-matematica.html",
+      "/artigos/vale-a-pena-ter-explicacoes-no-secundario.html",
+      "/artigos/porque-e-que-estudar-muito-nao-chega-em-matematica.html",
+    ]
+  },
   {
     titulo: "Como passar no Exame Nacional de Matemática A",
     descricao: "Guia completo com método de estudo, erros comuns e plano de preparação para melhorar a nota.",
