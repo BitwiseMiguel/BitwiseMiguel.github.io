@@ -1,16 +1,27 @@
 /*
-  "/artigos/como-acompanhar-a-materia-quando-ja-estas-atrasado.html",
-  "/artigos/como-subir-de-10-para-15-valores-a-matematica.html",
-  "/artigos/porque-e-que-os-alunos-tem-dificuldades-a-matematica.html",
-  "/artigos/porque-e-que-estudar-muito-nao-chega-em-matematica.html",
+  0, "/artigos/como-acompanhar-a-materia-quando-ja-estas-atrasado.html",
+  4, "/artigos/como-subir-de-10-para-15-valores-a-matematica.html",
+  4, "/artigos/porque-e-que-os-alunos-tem-dificuldades-a-matematica.html",
+  5, "/artigos/porque-e-que-estudar-muito-nao-chega-em-matematica.html",
   
-  "/artigos/como-passar-no-exame-nacional-de-matematica-a.html",
+  4, "/artigos/como-passar-no-exame-nacional-de-matematica-a.html",
+  0, "/artigos/funcoes-no-exame-nacional-explicadas-de-forma-simples.html",
   
-  "/artigos/vale-a-pena-ter-explicacoes-no-secundario.html",
-  "/artigos/explicacoes-de-matematica-online-vs-presenciais.html",
+  4, "/artigos/vale-a-pena-ter-explicacoes-no-secundario.html",
+  3, "/artigos/explicacoes-de-matematica-online-vs-presenciais.html",
 */
 
 const artigos = [
+  {
+    titulo: "Funções no Exame Nacional explicadas de forma simples",
+    descricao: "Explicação clara e prática das funções mais importantes para o Exame Nacional de Matemática A, com exemplos e estratégias para resolver exercícios.",
+    link: "/artigos/funcoes-no-exame-nacional-explicadas-de-forma-simples.html",
+    relacionados: [
+      "/artigos/como-passar-no-exame-nacional-de-matematica-a.html",
+      "/artigos/como-subir-de-10-para-15-valores-a-matematica.html",
+      "/artigos/porque-e-que-estudar-muito-nao-chega-em-matematica.html",
+    ]
+  },
   {
     titulo: "Como acompanhar a matéria quando já estás atrasado?",
     descricao: "Guia prático para recuperar matéria em atraso com método eficiente, evitar erros comuns e voltar ao ritmo de estudo rapidamente.",
