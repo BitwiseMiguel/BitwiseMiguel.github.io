@@ -1,0 +1,50 @@
+[
+  {
+    "titulo": "Funções no Exame Nacional explicadas de forma simples",
+    "descricao": "Explicação clara e prática das funções mais importantes para o Exame Nacional de Matemática A, com exemplos e estratégias de resolução.",
+    "slug": "funcoes-no-exame-nacional-explicadas-de-forma-simples",
+    "keywords": ["funções", "exame nacional", "matemática A"]
+  },
+  {
+    "titulo": "Como acompanhar a matéria quando já estás atrasado?",
+    "descricao": "Guia prático para recuperar matéria em atraso, evitar erros comuns e voltar ao ritmo de estudo de forma eficiente.",
+    "slug": "como-acompanhar-a-materia-quando-ja-estas-atrasado",
+    "keywords": ["estudo", "recuperar matéria", "dificuldades"]
+  },
+  {
+    "titulo": "Como passar no Exame Nacional de Matemática A",
+    "descricao": "Guia completo com método de estudo, erros comuns e plano de preparação para melhorar a nota no exame.",
+    "slug": "como-passar-no-exame-nacional-de-matematica-a",
+    "keywords": ["exame nacional", "matemática A", "estudo"]
+  },
+  {
+    "titulo": "Como subir de 10 para 15 valores a Matemática",
+    "descricao": "Estratégias práticas para melhorar a nota a Matemática, com foco em métodos eficazes e treino adequado.",
+    "slug": "como-subir-de-10-para-15-valores-a-matematica",
+    "keywords": ["melhorar nota", "matemática", "estudo"]
+  },
+  {
+    "titulo": "Vale a pena ter explicações no secundário?",
+    "descricao": "Análise sobre quando as explicações fazem diferença no secundário e como podem ajudar a melhorar os resultados.",
+    "slug": "vale-a-pena-ter-explicacoes-no-secundario",
+    "keywords": ["explicações", "secundário", "apoio escolar"]
+  },
+  {
+    "titulo": "Porque é que os alunos têm dificuldades a Matemática?",
+    "descricao": "Principais causas das dificuldades a Matemática e estratégias para ultrapassar esses obstáculos.",
+    "slug": "porque-e-que-os-alunos-tem-dificuldades-a-matematica",
+    "keywords": ["dificuldades", "matemática", "aprendizagem"]
+  },
+  {
+    "titulo": "Porque é que estudar muito não chega em Matemática?",
+    "descricao": "Explicação de porque estudar muito não garante bons resultados e como estudar de forma mais eficaz.",
+    "slug": "porque-e-que-estudar-muito-nao-chega-em-matematica",
+    "keywords": ["estudo", "matemática", "eficiência"]
+  },
+  {
+    "titulo": "Explicações de Matemática online vs presenciais",
+    "descricao": "Comparação entre explicações online e presenciais, com vantagens e desvantagens de cada formato.",
+    "slug": "explicacoes-de-matematica-online-vs-presenciais",
+    "keywords": ["explicações", "online", "presencial"]
+  }
+]

@@ -9,6 +9,13 @@ function getCurrentPage() {
 
 let currentPage = getCurrentPage();
 
+let artigos = [];
+
+async function loadArtigos() {
+  const res = await fetch("./artigos/artigos.json");
+  artigos = await res.json();
+}
+
 function renderPosts() {
   const container = document.getElementById("blog-list");
   container.innerHTML = "";
@@ -25,7 +32,7 @@ function renderPosts() {
           <span class="titulo">${post.titulo}</span>
         </div>
         <div class="descricao">${post.descricao}</div>
-        <a href="${post.link}">Ler artigo</a>
+        <a href="/artigos/${post.slug}.html">Ler artigo</a>
       </div>
     `;
   });
@@ -81,4 +88,7 @@ function renderAll() {
   renderPagination(currentPage, totalPages);
 }
 
-document.addEventListener("DOMContentLoaded", renderAll);
+document.addEventListener("DOMContentLoaded", async () => {
+  await loadArtigos();
+  renderAll();
+});

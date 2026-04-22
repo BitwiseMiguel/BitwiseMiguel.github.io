@@ -84,36 +84,15 @@ p {
   text-align: justify;
 }
 
-.destaque {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.destaque-center {
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
-}
-
 
 /* =========================================================
    4. LAYOUT GERAL
    ========================================================= */
 
-.container {
-  margin: 20px auto;
-  max-width: 700px;
-  width: 100%;
-}
-
 .page-layout {
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr) 200px;
   grid-template-rows: auto 1fr;
-
-  grid-template-areas:
-    "top top top"
-    "left center right";
 
   gap: 20px;
 
@@ -122,37 +101,25 @@ p {
   padding: 20px;
 }
 
-/* topo */
-.top {
-  grid-area: top;
-}
+.left { grid-column: 1; }
+.right { grid-column: 3; }
+.content { grid-column: 2; }
 
-/* sidebars */
-.sidebar {
-  padding: 15px;
-  border-radius: 8px;
-  position: sticky;
-  top: 20px;
-}
-
-/* centro */
-.content {
-  grid-area: center;
-  min-width: 0;
-  padding: 15px;
-  border-radius: 8px;
-}
+.full { grid-column: 1 / -1; }
 
 @media (max-width: 900px) {
   .page-layout {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "top"
-      "center";
   }
 
-  .sidebar {
+  .left,
+  .right {
     display: none;
+  }
+
+  .content,
+  .full {
+    grid-column: 1;
   }
 }
 
@@ -200,20 +167,6 @@ nav a {
   font-size: 14px;
   color: black;
   text-decoration: none;
-}
-
-/* Menu horizontal (caso uses flex no futuro) */
-.menu {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.menu a,
-.dropbtn {
-  text-decoration: none;
-  cursor: pointer;
 }
 
 
@@ -265,7 +218,7 @@ nav a {
    8. SECÇÕES ESPECIAIS
    ========================================================= */
 
-.faixa-azul {
+.blue-section {
   background: #0a5aa0;
   color: white;
   padding: 20px 0;
@@ -302,31 +255,12 @@ nav a {
 
 
 /* =========================================================
-   10. SECÇÃO DE NOTÍCIAS
-   ========================================================= */
-
-.news {
-  margin-top: 10px;
-}
-
-.news b {
-  font-size: 14px;
-}
-
-.news small {
-  display: block;
-  color: #555;
-  margin-bottom: 5px;
-}
-
-
-/* =========================================================
    11. FOOTER
    ========================================================= */
 
 .footer {
   text-align: center;
-  margin-top: 40px;
+  margin: 40px auto 40px auto;
   font-size: 12px;
 }
 
@@ -396,7 +330,11 @@ sup {
   align-items: start !important;
 }
 
-/* inputs */
+
+/* =========================================================
+   13. CONTACT FORM
+   ========================================================= */
+
 .contacto-form input,
 .contacto-form textarea {
   width: 100%;
@@ -434,44 +372,4 @@ sup {
   padding: 12px 20px;
   border-radius: 8px;
   z-index: 9999;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 30px 0;
-}
-
-.pagination button {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  background: white;
-  cursor: pointer;
-}
-
-.pagination button.active {
-  background: #007BFF;
-  color: white;
-}
-
-#related-posts {
-  margin: 15px 0;
-  padding-left: 18px; /* controla o recuo */
-  text-align: left;
-}
-
-#related-posts li {
-  margin-bottom: 0px; /* menos espaço entre itens */
-  line-height: 1.4;   /* reduz altura da linha */
-}
-
-#related-posts a {
-  font-size: 14px; /* opcional: ligeiramente menor */
-  text-decoration: none;
-  color: #007BFF;
-}
-
-#related-posts a:hover {
-  text-decoration: underline;
 }
