@@ -105,6 +105,12 @@ p {
 .right { grid-column: 3; }
 .content { grid-column: 2; }
 
+.left, .right {
+  position: sticky;
+  top: 20px; /* ou o valor que quiseres */
+  align-self: start;
+}
+
 .full { grid-column: 1 / -1; }
 
 @media (max-width: 900px) {
