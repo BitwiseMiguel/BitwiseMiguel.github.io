@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "O que é uma derivada? Explicação simples para perceber de verdade (sem fórmulas complicadas)",
+    "descricao": "Explicação intuitiva do conceito de derivada, ideal para quem procura entender o que é derivada pela primeira vez.",
+    "slug": "o-que-e-uma-derivada-explicacao-simples",
+    "keywords": ["derivada", "explicação simples", "matemática A", "cálculo diferencial"]
+  },
+  {
     "titulo": "Funções no Exame Nacional explicadas de forma simples",
     "descricao": "Explicação clara e prática das funções mais importantes para o Exame Nacional de Matemática A, com exemplos e estratégias de resolução.",
     "slug": "funcoes-no-exame-nacional-explicadas-de-forma-simples",
