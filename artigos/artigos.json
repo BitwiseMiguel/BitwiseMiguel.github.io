@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Porque é que percebo nas aulas mas falho nos testes?",
+    "descricao": "Explicação das principais razões pelas quais muitos alunos percebem a matéria nas aulas mas falham nos testes, e o que fazer para corrigir isso.",
+    "slug": "porque-e-que-percebo-nas-aulas-mas-falho-nos-testes",
+    "keywords": ["dificuldades", "matemática", "testes", "estudo"]
+  },
+  {
     "titulo": "Quanto custam explicações de Matemática?",
     "descricao": "Descobre quanto custam explicações de matemática, os preços por hora e o que realmente influencia o valor.",
     "slug": "quanto-custam-explicacoes-matematica",
@@ -51,7 +57,7 @@
     "titulo": "Porque é que os alunos têm dificuldades a Matemática?",
     "descricao": "Principais causas das dificuldades a Matemática e estratégias para ultrapassar esses obstáculos.",
     "slug": "porque-e-que-os-alunos-tem-dificuldades-a-matematica",
-    "keywords": ["dificuldades", "matemática", "aprendizagem"]
+    "keywords": ["dificuldades", "matemática", "melhorar", "ajuda", "explicações"]
   },
   {
     "titulo": "Porque é que estudar muito não chega em Matemática?",
@@ -63,6 +69,6 @@
     "titulo": "Explicações de Matemática online vs presenciais",
     "descricao": "Comparação entre explicações online e presenciais, com vantagens e desvantagens de cada formato.",
     "slug": "explicacoes-de-matematica-online-vs-presenciais",
-    "keywords": ["explicações", "online", "presencial"]
+    "keywords": ["explicações", "online", "presencial", "matemática"]
   }
 ]

@@ -4,7 +4,7 @@ function showToast() {
   setTimeout(() => t.style.display = "none", 3000);
 }
 
-const form = document.getElementById("contactForm");
+const form = document.getElementById("inscriptionForm");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -21,7 +21,7 @@ form.addEventListener("submit", async (e) => {
 
 
   if (response.ok) {
-    window.location.href = "pre-inscricao-recebida.html";
+    window.location.href = "curso-m23/pre-inscricao-recebida.html";
   } else {
     showToast("Erro ao enviar mensagem");
   }
