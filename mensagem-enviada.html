@@ -9,8 +9,11 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
 
   <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <base href="/">
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -29,8 +32,6 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
-
-
 </head>
 
 <body>
@@ -40,19 +41,32 @@
     <h1></h1>
   </div>
 
+  <!-- =======================
+      NAV
+  ======================== -->
   <nav>
-    <a href="">Página inicial</a> |
+    <a href="/">Início</a>
+
     <div class="dropdown">
-      <span class="dropbtn"><a href="servicos.html">Serviços</a></span>
+      <a class="dropbtn" href="/cursos/">Cursos</a>
       <div class="dropdown-content">
-        <a href="servicos/explicacoes-de-matematica-ensino-secundario.html">Explicações de Matemática - Ensino Secundário</a>
-        <a href="servicos/explicacoes-de-matematica-ensino-superior.html">Explicações de Matemática - Ensino Superior</a>
-        <a href="servicos/preparacao-de-maiores-de-23.html">Preparação de Maiores de 23</a>
+        <a href="/cursos/curso-m23/">Maiores de 23</a>
+        <a href="/cursos/exame-nacional-mat-a/">Secundário</a>
       </div>
-    </div> |
-    <a href="descontos.html">Descontos</a> |
-    <a href="blog.html">Blog</a> |
-    <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="dropdown">
+      <a class="dropbtn" href="/explicacoes/">Explicações</a>
+      <div class="dropdown-content">
+        <a href="/explicacoes/secundario.html">Ensino Secundário</a>
+        <a href="/explicacoes/universidade.html">Ensino Superior</a>
+        <a href="/explicacoes/maiores-de-23.html">Preparação de Maiores de 23 </a>
+      </div>
+    </div>
+
+    <a href="/conteudos/">Conteúdos</a>
+    <!--- soon <a href="/loja/">Loja</a>-->
+    <a href="/contacto.html">Contacto</a>
   </nav>
 
   <div class="page-layout">
@@ -79,10 +93,8 @@
   </div>
 
   <div class="footer">
-    Academia de Matemática <br>
-    © 2024 Todos os direitos reservados <br>
+    © 2024 Academia de Matemática · Todos os direitos reservados
   </div>
-  
 
 </body>
 </html>

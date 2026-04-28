@@ -1,50 +1,71 @@
-
-/* =========================================================
-   1. VARIÁVEIS
-   ========================================================= */
-
+/* ========================================
+   1. DESIGN SYSTEM (VARIÁVEIS)
+======================================== */
 :root {
+  /* Cores principais */
   --primary: #2563eb;
   --secondary: #64748b;
   --success: #16a34a;
   --danger: #dc2626;
   --warning: #f59e0b;
 
+  /* Base */
   --bg: #e9e9e9;
   --text: #3c3c3c;
-  --url: #0058cc;
+  --link: #0058cc;
 
-  --radius: 8px;
-  --spacing: 1rem;
+  /* UI */
+  --border: #ccc;
+  --surface: #ffffff;
+  --nav-bg: #f2f2f2;
+  --blue-section: #0a5aa0;
+
+  /* Layout */
+  --max-width: 1200px;
+  --content-width: 700px;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-xl: 40px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+
+  /* Shadow */
+  --shadow-soft: 0 4px 10px rgba(0,0,0,0.2);
+
+  /* Typography */
+  --font-main: 'Montserrat', sans-serif;
 }
 
 
-/* =========================================================
-   1. BASE GLOBAL
-   ========================================================= */
-
-/* Estilo geral do site */
+/* ========================================
+   2. RESET / BASE
+======================================== */
 html, body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--bg);
+  font-family: var(--font-main);
+  background: var(--bg);
   color: var(--text);
-  margin: 0;
 }
 
-/* Links globais */
 a {
-  color: var(--url);
+  color: var(--link);
+  text-decoration: none;
 }
 
 
-/* =========================================================
-   2. TIPOGRAFIA
-   ========================================================= */
-
+/* ========================================
+   3. TIPOGRAFIA
+======================================== */
 h1 {
   text-align: center;
   font-size: 34px;
-  margin: 10px;
+  margin: var(--space-sm);
   font-weight: bold;
   min-height: 34px;
   line-height: 1.2;
@@ -53,16 +74,21 @@ h1 {
 h2 {
   text-align: center;
   font-size: 26px;
-  margin: 10px 0px;
+  margin: var(--space-sm) 0;
   font-weight: bold;
   min-height: 26px;
 }
 
 h3 {
   font-size: 20px;
-  margin: 10px 0px;
+  margin: var(--space-sm) 0;
   font-weight: bold;
   min-height: 20px;
+}
+
+h3 i {
+  margin-right: 8px;
+  color: var(--primary);
 }
 
 p {
@@ -72,10 +98,9 @@ p {
 }
 
 
-/* =========================================================
-   3. UTILITÁRIOS DE TEXTO
-   ========================================================= */
-
+/* ========================================
+   4. UTILITÁRIOS
+======================================== */
 .center {
   text-align: center;
 }
@@ -85,58 +110,39 @@ p {
 }
 
 
-/* =========================================================
-   4. LAYOUT GERAL
-   ========================================================= */
-
+/* ========================================
+   5. LAYOUT PRINCIPAL
+======================================== */
 .page-layout {
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr) 200px;
-  grid-template-rows: auto 1fr;
+  gap: var(--space-md);
 
-  gap: 20px;
-
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 20px;
+  padding: var(--space-md);
 }
 
 .left { grid-column: 1; }
-.right { grid-column: 3; }
 .content { grid-column: 2; }
+.right { grid-column: 3; }
 
-.left, .right {
+.left,
+.right {
   position: sticky;
-  top: 20px; /* ou o valor que quiseres */
+  top: var(--space-md);
   align-self: start;
 }
 
 .full { grid-column: 1 / -1; }
 
-@media (max-width: 900px) {
-  .page-layout {
-    grid-template-columns: 1fr;
-  }
 
-  .left,
-  .right {
-    display: none;
-  }
-
-  .content,
-  .full {
-    grid-column: 1;
-  }
-}
-
-
-/* =========================================================
-   5. HEADER
-   ========================================================= */
-
+/* ========================================
+   6. HEADER
+======================================== */
 .header {
   position: relative;
-  max-width: 700px;
+  max-width: var(--content-width);
   margin: 45px auto 0;
   text-align: center;
 }
@@ -149,25 +155,19 @@ p {
   transform: translateY(-50%);
 }
 
-@media (max-width: 900px) {
-  .logo {
-    left: 20px;
-  }
-}
 
-
-/* =========================================================
-   6. NAVEGAÇÃO (MENU)
-   ========================================================= */
-
+/* ========================================
+   7. NAVBAR
+======================================== */
 nav {
-  background: #f2f2f2;
-  padding: 8px;
+  background: var(--nav-bg);
+  padding: var(--space-xs);
   text-align: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border);
   margin-top: 30px;
-  top: 0pt; /* ou o valor que quiseres */
+
   position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
@@ -175,18 +175,16 @@ nav a {
   margin: 0 8px;
   font-size: 14px;
   color: black;
-  text-decoration: none;
 }
 
 
-/* =========================================================
-   7. DROPDOWN MENU
-   ========================================================= */
-
+/* ========================================
+   8. DROPDOWN
+======================================== */
 .dropdown {
-  margin: 0 8px;
   position: relative;
   display: inline-block;
+  margin: 0 8px;
 }
 
 .dropbtn::after {
@@ -201,11 +199,11 @@ nav a {
   position: absolute;
   top: 100%;
   left: 0;
+
   width: 250px;
-  background-color: white;
-  min-width: 160px;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
 }
 
 .dropdown-content a {
@@ -215,7 +213,7 @@ nav a {
 }
 
 .dropdown-content a:hover {
-  background-color: #f0f0f0;
+  background: #f0f0f0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -223,32 +221,33 @@ nav a {
 }
 
 
-/* =========================================================
-   8. SECÇÕES ESPECIAIS
-   ========================================================= */
-
+/* ========================================
+   9. SECÇÕES
+======================================== */
 .blue-section {
-  background: #0a5aa0;
+  background: var(--blue-section);
   color: white;
-  padding: 20px 0;
+  padding: var(--space-md) 0;
   width: 100%;
 }
 
 
-/* =========================================================
-   9. BOTÕES
-   ========================================================= */
-
+/* ========================================
+   10. BOTÕES
+======================================== */
 .big-button {
   padding: 14px 28px;
   font-size: 16px;
   font-weight: bold;
+
   color: white;
   background: linear-gradient(135deg, #4a90e2, #0077ff);
+
   border: none;
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  box-shadow: var(--shadow-soft);
   transition: all 0.25s ease;
 }
 
@@ -259,25 +258,12 @@ nav a {
 
 .big-button:active {
   transform: translateY(0);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 
-/* =========================================================
-   11. FOOTER
-   ========================================================= */
-
-.footer {
-  text-align: center;
-  margin: 40px auto 40px auto;
-  font-size: 12px;
-}
-
-
-/* =========================================================
-   12. COMPONENTES (BOXES / ICONS)
-   ========================================================= */
-
+/* ========================================
+   11. COMPONENTES
+======================================== */
 .image {
   width: 50px;
   height: auto;
@@ -304,53 +290,210 @@ sup {
 }
 
 
-/* =========================================================
-   13. GRID DE BLOCOS
-   ========================================================= */
-
+/* ========================================
+   12. GRID DE BLOCOS
+======================================== */
 .blocos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: var(--space-lg);
 }
 
 .box {
   width: 320px;
-  border-radius: 8px;
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+  gap: var(--space-sm);
+}
+
+.box-grey { background-color: #d6d6d6; }
+
+/* =========================
+   COURSE CARD SYSTEM
+========================= */
+
+.course-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+
+  display: flex;
+  flex-direction: column;
+  
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  width: 340px;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* imagem / ícone */
+.course-image {
+  background: var(--blue-section);
+  color: white;
+
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-size: 40px;
+}
+
+/* conteúdo */
+.course-content {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.course-description {
+  font-size: 13px;
+  color: var(--secondary);
+  line-height: 1.4;
+}
+
+.course-spacer {
+  flex: 1;
+}
+
+/* meta info */
+.course-meta {
+  margin-top: auto;
+  
+  font-size: 12px;
+  color: var(--secondary);
+
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* botão */
+.course-button {
+  margin-top: auto;
+
+  text-align: center;
   padding: 10px;
+
+  background: var(--primary);
+  color: white;
+
+  border-radius: var(--radius-md);
+
+  font-weight: bold;
+  font-size: 14px;
+
+  transition: background 0.2s ease;
 }
 
-.container-wide {
-  max-width: 1200px;   /* maior que o container normal */
-  width: 100%;
-  margin: 20px auto;
-  padding: 0 40px;     /* mais respiro lateral */
+.course-button:hover {
+  background: #1e4fd6;
 }
 
+.course-header {
+  background: var(--blue-section);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 14px;
+}
+
+.course-icon {
+  font-size: 18px;
+}
+
+.course-type {
+  font-size: 16px;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   13. FAQ
+======================================== */
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.faq-item summary {
+  font-weight: 600;
+  font-size: 1.05em;
+  list-style: none;
+}
+
+/* remove seta default */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* seta personalizada */
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  font-size: 1.2em;
+}
+
+/* quando aberto */
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   13. CONTACTO
+======================================== */
 .contacto-grid {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 40px !important;
-  align-items: start !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
 }
-
-
-/* =========================================================
-   13. CONTACT FORM
-   ========================================================= */
 
 .contacto-form input,
 .contacto-form textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: var(--space-sm);
+  margin-top: var(--space-sm);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
   font-family: inherit;
 }
 
@@ -359,26 +502,86 @@ sup {
   resize: vertical;
 }
 
-/* coluna info */
 .contacto-info p {
   margin: 10px 0;
 }
 
-/* responsivo */
-@media (max-width: 800px) {
-  .contacto-grid {
-    grid-template-columns: 1fr;
-  }
+
+/* ========================================
+   14. FOOTER
+======================================== */
+.footer {
+  text-align: center;
+  margin: var(--space-xl) auto;
+  font-size: 12px;
 }
 
+
+/* ========================================
+   15. TOAST
+======================================== */
 .toast {
   display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #0a5aa0;
+
+  background: var(--blue-section);
   color: white;
+
   padding: 12px 20px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   z-index: 9999;
+}
+
+
+/* ========================================
+   15. COMING SOON
+======================================== */
+.coming-soon {
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 0.85em;
+}
+
+.course-coming-soon {
+  display: inline-block;
+  padding: 8px 12px;
+  color: #555;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.course-coming-soon::after {
+  content: "🚧 Brevemente disponível";
+}
+
+
+/* ========================================
+   16. RESPONSIVO
+======================================== */
+@media (max-width: 900px) {
+
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .left,
+  .right {
+    display: none;
+  }
+
+  .content,
+  .full {
+    grid-column: 1;
+  }
+
+  .logo {
+    left: 20px;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
 }

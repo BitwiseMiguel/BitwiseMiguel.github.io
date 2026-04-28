@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-PT">
 <head>
 
-  <title>Serviços de Explicações de Matemática em Guimarães | Academia de Matemática</title>
-
-  <meta name="description" content="Explicações de Matemática em Guimarães e online. Apoio ao ensino secundário e superior e preparação para exames nacionais. Acompanhamento personalizado.">
+  <title>Marcar explicação de matemática</title>
+  <meta name="description" content="Marca a tua explicação de matemática através do formulário ou contacto direto. Resposta rápida.">
+  <link rel="canonical" href="https://bitwisemiguel.github.io/explicacoes/marcar.html">
+  
+  <script defer src="/assets/js/sendmessage.js"></script>
+  <script defer src="/explicacoes/contactform.js"></script>
 
   <!-- SEO local -->
   <script type="application/ld+json">
@@ -122,101 +124,119 @@
     <a href="/contacto.html">Contacto</a>
   </nav>
 
-  <div class="page-layout">
+  <header class="header">
+    <h1>Marcar explicação</h1>
+    <p class="center">
+      Escolhe a forma mais simples de entrar em contacto.
+    </p>
+  </header>
 
-    <main class="full">
-
-      <h1>Serviços de Explicações de Matemática</h1>
-
-      <div class="blocos">
-
-        <div class="box">
-          <div class="topo">
-            <img src="assets/img/p1.svg" class="image" alt="Aulas presenciais de matemática em Braga">
-            <span class="titulo">
-              Aulas Presenciais
-            </span>
-          </div>
-
-          <div class="descricao">
-            Explicações presenciais de Matemática em Guimarães com acompanhamento direto e interação com o professor.
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="topo">
-            <img src="assets/img/p2.svg" class="image" alt="Aulas online de matemática">
-            <span class="titulo">
-              Aulas Online
-            </span>
-          </div>
-
-          <div class="descricao">
-            Aulas de Matemática online para alunos de qualquer nível, com explicações claras e acompanhamento personalizado.
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="topo">
-            <img src="assets/img/p3.svg" class="image" alt="Resolução de exercícios de matemática">
-            <span class="titulo">
-              Resolução de Exercícios
-            </span>
-          </div>
-
-          <div class="descricao">
-            Apoio na resolução de exercícios e preparação para testes e exames nacionais de Matemática.
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="topo">
-            <img src="assets/img/p4.svg" class="image" alt="Apoio em trabalhos escolares de matemática">
-            <span class="titulo">
-              Apoio a Trabalhos Escolares
-            </span>
-          </div>
-
-          <div class="descricao">
-            Orientação em trabalhos e projetos escolares de Matemática com acompanhamento contínuo.
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="topo">
-            <img src="assets/img/p5.svg" class="image" alt="Avaliação de desempenho em matemática">
-            <span class="titulo">
-              Avaliação Diagnóstica
-            </span>
-          </div>
-
-          <div class="descricao">
-            Testes de diagnóstico para identificar dificuldades e definir estratégias de melhoria.
-          </div>
-        </div>
-
-      </div>
-    </main>
-
+  <section class="page-layout">
     <div class="content">
 
-      <h2>Entre em contacto</h2>
+      <div class="contacto-grid">
 
-      <p style="font-size: 18px; text-align: center; font-weight: bold;">
-        Marque já a sua explicação de Matemática.
-      </p>
+        <!-- FORM -->
+        <form id="contactForm" class="contacto-form">
+          
+          <h2>Marcação</h2>
 
-      <div class="center">
-        <a href="/contacto.html">
-          <button class="big-button">
-            Contacto
-          </button>
-        </a>
+          <p class="center">
+            Preenche os teus dados e será feita a marcação.
+          </p>
+
+          <input type="hidden" name="id" value="Marcação de Explicação">
+
+          <input type="text" name="nome" placeholder="Nome completo" required>
+
+          <input type="email" name="email" placeholder="Email" required>
+
+          <input type="tel" name="telefone" placeholder="Telefone" required style="margin-bottom:10px;">
+
+          <select id="nivel" name="nivel" style="width:100%;padding:10px;margin-bottom:10px;">
+            <option value="">Nível</option>
+            <option value="secundario">Secundário</option>
+            <option value="universitario">Universitário</option>
+            <option value="maiores23">Maiores de 23</option>
+          </select>
+
+          <select id="detalhe" name="detalhe" style="width:100%;padding:10px;margin-bottom:10px;">
+            <option value="">Seleciona primeiro o nível</option>
+          </select>
+
+          <textarea name="message" placeholder="Mensagem (ex: nível de ensino, dúvidas, objetivo)"></textarea>
+
+          <div class="center">
+            <button type="submit" class="big-button" style="width:100%;">
+              Enviar pedido
+            </button>
+          </div>
+        </form>
+
+        <!-- INFO -->
+        <div class="contacto-info">
+
+          <h2>Como funciona a marcação</h2>
+
+          <h3>1. Envia o pedido</h3>
+          <p>
+            Usa o formulário ou entra em contacto por email ou telemóvel.
+          </p>
+          
+          <h3>2. Confirmação</h3>
+          <p>
+            Recebes resposta com horários disponíveis de acordo com a agenda.
+          </p>
+
+          <h3>3. Início da explicação</h3>
+          <p>
+            A sessão é agendada e confirmada após acordo do horário.
+          </p>
+
+          <h2>Contacto direto</h2>
+
+          <p>
+            Se pretende apoio em Matemática, estamos disponíveis para esclarecer dúvidas, agendar aulas ou avaliar o seu nível.
+          </p>
+
+          <p>
+            <strong>Academia de Matemática</strong><br>
+            Azurém, Guimarães, Portugal
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:AcademiaDeMatematicaMO@gmail.com">AcademiaDeMatematicaMO@gmail.com</a>
+          </p>
+
+          <p>
+            <strong>Telefone:</strong>
+            <a href="tel:+351967816939">+351 96 781 69 39</a>
+          </p>
+
+          <p style="text-align: center">
+            <strong>Respondemos em menos de 24 horas</strong>
+          </p>
+
+        </div>
+
       </div>
 
     </div>
+  </section>
 
-  </div>
+  <section class="page-layout">
+    <div class="content">
+      
+      <h2>Informação importante</h2>
+
+      <p>
+        As marcações estão sujeitas à disponibilidade do professor.<br>
+        A resposta é feita o mais rapidamente possível após o contacto.
+      </p>
+
+    </div>
+  </section>
 
   <div class="footer">
     © 2024 Academia de Matemática · Todos os direitos reservados

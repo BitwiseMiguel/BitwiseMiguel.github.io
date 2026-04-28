@@ -12,7 +12,7 @@ let currentPage = getCurrentPage();
 let artigos = [];
 
 async function loadArtigos() {
-  const res = await fetch("./artigos/artigos.json");
+  const res = await fetch("./conteudos/blog/artigos.json");
   artigos = await res.json();
 }
 
@@ -27,12 +27,12 @@ function renderPosts() {
 
   posts.forEach(post => {
     container.innerHTML += `
-      <div class="box" style="background-color: #d6d6d6;">
+      <div class="box box-grey">
         <div class="topo">
           <span class="titulo">${post.titulo}</span>
         </div>
         <div class="descricao">${post.descricao}</div>
-        <a href="/artigos/${post.slug}.html">Ler artigo</a>
+        <a href="/conteudos/blog/${post.slug}.html">Ler artigo</a>
       </div>
     `;
   });
