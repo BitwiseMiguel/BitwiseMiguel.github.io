@@ -1,5 +1,11 @@
 [
-    {
+  {
+    "titulo": "O erro mais perigoso em probabilidades",
+    "descricao": "Descobre o erro mais comum e perigoso em probabilidades e aprende como evitá-lo para melhorar resultados em testes e exames de Matemática.",
+    "slug": "erro-mais-perigoso-probabilidades",
+    "keywords": ["probabilidades matemática", "erros em probabilidades", "como estudar probabilidades", "matemática secundário", "melhorar matemática", "probabilidade exercícios", "erros comuns matemática"]
+  },
+  {
     "titulo": "Porque a tua intuição falha em Matemática",
     "descricao": "Descobre porque a intuição pode levar a erros em Matemática e como substituir esse padrão por um método eficaz para melhorar resultados.",
     "slug": "porque-a-tua-intuicao-falha-em-matematica",
