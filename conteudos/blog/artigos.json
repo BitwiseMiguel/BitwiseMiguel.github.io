@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "O que é um limite (explicação simples)",
+    "descricao": "Explicação simples e clara do conceito de limite em Matemática, com exemplos e erros comuns para ajudar a compreender este tema fundamental.",
+    "slug": "o-que-e-um-limite-explicacao-simples",
+    "keywords": ["limites matemática", "o que é um limite", "limites explicação simples", "matemática secundário", "derivadas e limites", "aprender limites", "exercícios limites"]
+  },
+  {
     "titulo": "O erro mais perigoso em probabilidades",
     "descricao": "Descobre o erro mais comum e perigoso em probabilidades e aprende como evitá-lo para melhorar resultados em testes e exames de Matemática.",
     "slug": "erro-mais-perigoso-probabilidades",
