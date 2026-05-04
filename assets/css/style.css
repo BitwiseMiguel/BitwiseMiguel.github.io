@@ -488,13 +488,15 @@ sup {
 }
 
 .contacto-form input,
-.contacto-form textarea {
+.contacto-form textarea,
+.contacto-form select {
   width: 100%;
   padding: var(--space-sm);
   margin-top: var(--space-sm);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   font-family: inherit;
+  box-sizing: border-box;
 }
 
 .contacto-form textarea {
