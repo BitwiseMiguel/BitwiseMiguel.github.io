@@ -136,7 +136,8 @@ Em `projetos.html` e `en/projects.html` há um comentário `HOW TO ADD A PROJECT
 | `igaming`      | iGaming                         | iGaming                     |
 
 4. Os projetos ficam do mais recente para o mais antigo. O primeiro é o **Alelus**.
-5. A barra de filtros por categoria só aparece a partir de **3 projetos**. Com menos, ficaria quase sempre vazia. Para mudar este número, altere `MIN_PROJECTS_FOR_FILTER` em `js/main.js`.
+   Os cartões **"Em breve" / "Coming soon"** (SlotGames, Sebentas) têm o comentário `<!-- UPCOMING PROJECT: … -->` e a classe `is-placeholder` (contorno tracejado). Quando o repositório for publicado, substitua o cartão por um cartão completo, copiado do bloco `HOW TO ADD A PROJECT`, com o link, as tecnologias e os destaques.
+5. Os botões de categoria sem nenhum projeto ficam escondidos automaticamente e reaparecem quando um cartão usar essa categoria em `data-category`. A barra de filtros só aparece a partir de **3 projetos**. Com menos, ficaria quase sempre vazia. Para mudar este número, altere `MIN_PROJECTS_FOR_FILTER` em `js/main.js`.
 
 > Nos projetos iGaming, confirme que não publica matemática, código ou dados de jogos que pertençam a antigos ou atuais empregadores ou clientes.
 

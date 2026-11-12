@@ -149,6 +149,17 @@
     if (cards.length < MIN_PROJECTS_FOR_FILTER) return;
     if (bar) bar.hidden = false;
 
+    // Hide category buttons that have no project yet (they reappear automatically
+    // as soon as a card uses that category in data-category)
+    buttons.forEach(function (btn) {
+      var f = btn.getAttribute("data-filter");
+      if (f === "all") return;
+      var used = Array.prototype.some.call(cards, function (card) {
+        return (card.getAttribute("data-category") || "").split(/\s+/).indexOf(f) !== -1;
+      });
+      if (!used) btn.parentElement.hidden = true;
+    });
+
     buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         var filter = btn.getAttribute("data-filter");

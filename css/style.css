@@ -438,7 +438,7 @@ html:not(.js) .theme-toggle { display: none; }
 .card-footer { margin-top: auto; padding-top: 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 
 /* Project cards */
-.project-card.is-placeholder { border-style: dashed; background: var(--color-card-placeholder); }
+.project-card.is-placeholder { border-style: dashed; background: var(--color-card-placeholder); align-self: start; }
 .project-card .tag-list { margin-top: 0.5rem; }
 .project-card[data-hidden="true"] { display: none; }
 
