@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bitwisemiguel.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/ensino.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/ensino.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/teaching.html"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/en/teaching.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/ensino.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/teaching.html"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/projetos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/projetos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/projects.html"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/en/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/projetos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/projects.html"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/cv.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/cv.html"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/en/cv.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/cv.html"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://bitwisemiguel.github.io/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bitwisemiguel.github.io/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitwisemiguel.github.io/en/contact.html"/>
+  </url>
+</urlset>
